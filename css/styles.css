@@ -1,0 +1,47 @@
+@import url("fonts.css");
+@import url("header.css");
+@import url("footer.css");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  overflow-x: hidden;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #f0f0f8;
+  color: #444;
+  font-family: Poppins-Regular, sans-serif;
+  display: grid;
+  grid-template-rows: 3em 1fr 3em;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+a {
+  text-decoration: none;
+  color: #5555cc;
+}
+
+#content {
+  grid-area: content;
+  padding: 1.5em;
+}

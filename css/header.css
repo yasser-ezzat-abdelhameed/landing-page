@@ -1,0 +1,37 @@
+#header {
+  grid-area: header;
+  background-color: #444;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+#header a {
+  color: whitesmoke;
+}
+
+#header nav {
+  display: flex;
+  flex: 1;
+}
+
+#header .nav-logo {
+  flex: 1;
+  padding-left: 1em;
+}
+
+#header .nav-right-section {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0.5em;
+}
+
+#header .nav-right-section a {
+  padding: 0 0.5em;
+}
+
+@media (min-width: 1200px) {
+  #header .nav-right-section {
+    padding-right: 1.5em;
+  }
+}
