@@ -1,9 +1,14 @@
 #header {
-  grid-area: header;
+  height: 3em;
   background-color: #444;
   width: 100vw;
   display: flex;
   align-items: center;
+  color: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 #header a {
@@ -18,16 +23,39 @@
 #header .nav-logo {
   flex: 1;
   padding-left: 1em;
+  display: flex;
+  align-items: center;
 }
 
 #header .nav-right-section {
   display: flex;
   justify-content: space-between;
-  padding-right: 0.5em;
 }
 
-#header .nav-right-section a {
-  padding: 0 0.5em;
+#header .nav-right-section li {
+  padding: 0 0.35em;
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+#header .nav-right-section li.active {
+  color: pink;
+}
+
+@media (min-width: 360px) {
+  #header .nav-right-section {
+    padding-right: 0.5em;
+  }
+  #header .nav-right-section li {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 420px) {
+  #header .nav-right-section li {
+    font-size: 1em;
+  }
 }
 
 @media (min-width: 1200px) {
